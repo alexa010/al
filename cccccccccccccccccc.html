@@ -168,55 +168,7 @@ document.cookie='c8dc5b=1542620425; expires=Tue, 19 Nov 2019 09:40:25 GMT; path=
 
 
 
-script>$(function(){function loadComments(page){page=page||0
-$('.comments-list').addClass('comments-loading')
-$.get('/prc/?a=comments_list',{page:page,gallery_id:window.videoId},function(data){$('.comments-list').removeClass('comments-loading')
-$('.comments-list .comment').remove()
-data=data.data
-if(!data.comments.length){return $('.comments-list').find('.no-comments-message').show()}
-$(data.comments).each(function(i,comment){var $el=$($('#comment-template').html())
-$el.find('.comment-username').text(comment.username)
-$el.find('.comment-text').html(comment.text)
-$el.find('.comment-date').text(comment.date)
-$('.comments-list').append($el)})
-if(data.pages>1){$('.comments-pagination').show()
-$('.comments-pagination-pages').empty()
-for(let p=0;p!=data.pages;p++){var $el=$($('#comment-page-template').html())
-$el.find('a').attr('data-page',p).text(p+1)
-if(p===page){$el.addClass($el.attr('data-selected-class')||'active')}
-$('.comments-pagination-pages').append($el)}}})}
-$('#btn-show-comments').click(function(){var visible=!$('.comments-content').is(':visible')
-$('.comments-content').slideToggle()
-$('body').trigger('comments-toggled',visible)
-loadComments()})
-var $form=$('.comments-form')
-if(!$form.is('form')){$form=$form.find('form')}
-$form.on('submit',function(event){event.preventDefault()
-var username=$.trim($('#comment-username').val())
-var text=$.trim($('#comment-text').val())
-if(!username){return alert('Username is required')}
-if(!text){return alert('text is required')}
-$.post('/prc/?a=comments_submit',{username:username,text:text,gallery_id:window.videoId},function(data){alert("Thank you! Your comment has been submitted and will be reviewed soon!")
-$('#comment-text').val('')
-$('#comment-username').val('')})})
-$('.smiles-dialog').on('click','.smile-in-list',function(){var code=$(this).attr('data-code')
-var $text=$('#comment-text')
-var cursorPos=$text.prop('selectionStart')
-var v=$text.val()
-var textBefore=v.substring(0,cursorPos)+' '
-var textAfter=' '+v.substring(cursorPos,v.length)
-var len=code.length+2
-if($.trim(textAfter)===''){textAfter=''
-len--}
-if($.trim(textBefore)===''){textBefore=''
-len--}
-$text.val(textBefore+code+textAfter)
-$text.focus()
-$text.prop('selectionStart',cursorPos+len)
-$text.prop('selectionEnd',cursorPos+len)
-return!1})
-$('.comments-pagination-pages').on('click','a',function(){loadComments(parseInt($(this).attr('data-page')))
-$('html, body').animate({scrollTop:$(".comments-list").offset().top-100},200)})})</script><script>videoId="1337";</script><script>document.addEventListener("DOMContentLoaded",function(){function appendUrlParam(url,k,v){var sep='?'
+<script>videoId="1337";</script><script>document.addEventListener("DOMContentLoaded",function(){function appendUrlParam(url,k,v){var sep='?'
 if(url.indexOf('?')>=0){sep='&'}
 url+=sep+k+'='+encodeURIComponent(v)
 return url}
