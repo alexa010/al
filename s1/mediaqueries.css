@@ -1,0 +1,263 @@
+@media all and (max-width: 479px) {
+	body {
+		font-size: 12px;
+	}
+	.container {
+		width: 300px;
+	}
+	.header {
+		padding: 4px 0 10px 0;
+		height: auto;
+		text-align: center;
+	}
+	.logo {
+		margin: 0;
+		float: none;
+		text-align: center;
+	}
+	.logo .site-name {
+		font-size: 24px;
+	}
+	.header-banner {
+		display: none;
+	}
+	.block-heading h2 {
+		float: none;
+		text-align: center;
+	}
+	.block-heading .navigation {
+		float: none;
+		text-align: center;
+	}
+	.block-heading .navigation li {
+		margin: 0;
+		float: none;
+		display: inline-block;
+		font-size: 12px;
+	}
+	.block-heading .navigation li a {
+		padding: 6px;
+	}
+	.video-previews li {
+		width: 140px;
+	}
+	.preview-image {
+		width: 140px;
+		height: 105px;
+	}
+	.preview-category-amount, .preview-date, .preview-duration {
+		top: 84px;
+		padding: 2px 4px 3px 4px;
+		font-size: 12px;
+		line-height: 12px;
+	}
+	.categories-list {
+		margin: 30px 0 30px 10px;
+	}
+	.categories-list-col {
+		width: 100%;
+	}
+	.categories-list-col ul {
+		margin: 0;
+		padding: 0;
+		float: left;
+	}
+	.player-container {
+		width: 320px;
+		height: 240px;
+		margin: 0 -10px;
+		float: none;
+	} 
+	.player-aside {
+		display: none;
+	}
+	.hint {
+		font-size: 12px;
+	}
+	.banner-wide {
+		display: none;
+	}
+}
+@media all and (min-width: 480px) and (max-width: 639px) {
+	.container {
+		width: 460px;
+	}
+	.header {
+		padding: 0 0 10px 0;
+		height: auto;
+		text-align: center;
+	}
+	.logo {
+		margin: 0;
+		float: none;
+		text-align: center;
+	}
+	.header-banner {
+		display: none;
+	}
+	.block-heading h2 {
+		float: none;
+		text-align: center;
+	}
+	.block-heading .navigation {
+		float: none;
+		text-align: center;
+	}
+	.block-heading .navigation li {
+		margin: 0 5px;
+		float: none;
+		display: inline-block;
+		font-size: 16px;
+	}
+	.video-previews li {
+		width: 200px;
+	}
+	.preview-image {
+		width: 200px;
+		height: 150px;
+	}
+	.preview-category-amount, .preview-date, .preview-duration {
+		top: 119px;
+	}
+	.categories-list-col {
+		width: 100%;
+	}
+	.categories-list-col ul {
+		margin: 0;
+		padding: 0;
+		float: left;
+	}
+	.player-container {
+		width: 480px;
+		height: 320px;
+		margin: 0 -10px;
+		float: none;
+	} 
+	.player-aside {
+		display: none;
+	}
+	.hint {
+		font-size: 18px;
+	}
+	.banner-wide {
+		display: none;
+	}
+}
+@media all and (min-width: 640px) and (max-width: 767px) {
+	.container {
+		width: 620px;
+	}
+	.header {
+		height: auto;
+		text-align: center;
+	}
+	.logo {
+		margin: 0;
+		float: none;
+		text-align: center;
+	}
+	.header-banner {
+		float: none;
+		margin: 10px auto;
+	}
+	.block-heading h2 {
+		float: none;
+		text-align: center;
+	}
+	.block-heading .navigation {
+		float: none;
+		text-align: center;
+	}
+	.block-heading .navigation li {
+		margin: 0 5px;
+		float: none;
+		display: inline-block;
+	}
+	.video-previews li {
+		width: 300px;
+	}
+	.preview-image {
+		width: 300px;
+		height: 225px;
+	}
+	.preview-category-amount, .preview-date, .preview-duration {
+		top: 194px;
+	}
+	.categories-list-col ul {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		float: left;
+	}
+	.player-container {
+		margin: 0 -10px;
+		float: none;
+	} 
+	.player-aside {
+		display: none;
+	}
+	.hint {
+		font-size: 18px;
+	}
+	.banner-wide {
+		display: none;
+	}
+}
+@media all and (min-width: 768px) and (max-width: 1023px) {
+	.container {
+		width: 748px;
+	}
+	.block-heading h2 {
+		float: none;
+		text-align: center;
+	}
+	.block-heading .navigation {
+		float: none;
+		text-align: center;
+	}
+	.block-heading .navigation li {
+		margin: 0 5px;
+		float: none;
+		display: inline-block;
+	}
+	.video-previews li {
+		width: 240px;
+	}
+	.preview-image {
+		width: 240px;
+		height: 180px;
+	}
+	.preview-category-amount, .preview-date, .preview-duration {
+		top: 149px;
+	}
+	.categories-list-col ul {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		float: left;
+	}
+	.player-container {
+		margin: 0 auto;
+		float: none;
+	} 
+	.player-aside {
+		display: none;
+	}
+}
+@media all and (min-width: 1280px) {
+	.container {
+		width: 1240px;
+	}
+	.player-aside {
+		width: 590px;
+		margin-left: 10px;
+		float: left;
+		font-size: 12px;
+	}
+	.player-aside .categories-list-col {
+		width: 33%;
+	}
+	.player-aside .col-3 {
+		display: block;
+	}
+}
